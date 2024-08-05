@@ -49,7 +49,7 @@ def products() -> list:
         "if some products are expired and some not"
     ]
 )
-@mock.patch(f'{main.__name__}.datetime', wraps=datetime)
+@mock.patch(f"{main.__name__}.datetime", wraps=datetime)
 def test_should_return_correct_list(
     mocked_today: mock.Mock,
     products: list,
